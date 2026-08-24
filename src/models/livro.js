@@ -5,15 +5,7 @@ class Livro {
     this.db = db;
   }
 
-  constructor({
-    id,
-    titulo,
-    paginas,
-    autor_id,
-    editora_id,
-    created_at,
-    updated_at,
-  }) {
+  constructor({ id, titulo, paginas, autor_id, editora_id, created_at, updated_at }) {
     this.id = id;
     this.titulo = titulo;
     this.paginas = paginas;

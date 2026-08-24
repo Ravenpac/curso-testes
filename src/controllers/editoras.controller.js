@@ -32,9 +32,7 @@ export class EditorasController {
     const editora = new Editora(body);
     try {
       const resposta = await editora.salvar(editora);
-      return res
-        .status(201)
-        .json({ message: 'editora criada', content: resposta });
+      return res.status(201).json({ message: 'editora criada', content: resposta });
     } catch (err) {
       return res.status(500).json(err.message);
     }

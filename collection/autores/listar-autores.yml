@@ -5,14 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/autores"
+  url: '{{baseUrl}}/autores'
   auth: inherit
 
 runtime:
   assertions:
     - expression: res.status
       operator: eq
-      value: "200"
+      value: '200'
 
 settings:
   encodeUrl: true

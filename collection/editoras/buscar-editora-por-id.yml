@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/editoras/:id"
+  url: '{{baseUrl}}/editoras/:id'
   params:
     - name: id
-      value: "1"
+      value: '1'
       type: path
   auth: inherit
 
@@ -16,7 +16,7 @@ runtime:
   assertions:
     - expression: res.status
       operator: eq
-      value: "200"
+      value: '200'
 
 settings:
   encodeUrl: true
